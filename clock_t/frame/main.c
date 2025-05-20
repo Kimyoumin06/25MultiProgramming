@@ -22,12 +22,12 @@ int main()
 
 	while (a == 1)
 	{
-		while (fps < 600)
+		while (fps < 60 * 10)
 		{
 			gotoxy(0, y);
 			fps = fps + 1;
 			Sleep(10);
-			printf("%d 프레임.. %d번", fps, y+1);
+			printf("%d 프레임.. %d번 실행", fps, y+1);
 
 			if (fps % 60 == 0)
 			{
