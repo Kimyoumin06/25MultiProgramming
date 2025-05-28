@@ -4,7 +4,21 @@
 #include <windows.h>
 #include <time.h>
 
-int Bread()
+int Bread1()
+{
+	int time = 10;
+	int bread = 1;
+	
+	while (time)
+	{
+		printf("»§ÀÌ %d »ý¼ºµÊ\n", bread);
+		Sleep(100);
+		bread = bread + 1;
+		time = time - 1;
+	}
+}
+
+int Bread2()
 {
 	int time = 10;
 	int bread = 1;
@@ -13,15 +27,13 @@ int Bread()
 	double cpu_time_used;
 
 	/* gpt ´äº¯ : for (int i = 97; i <= 102; i++) {
-    printf("%c\n", i);  // °á°ú´Â a, b, c, d, e, f}*/
+	printf("%c\n", i);  // °á°ú´Â a, b, c, d, e, f}*/
 
 	start = clock();
 	while (time)
 	{
-		printf("»§ÀÌ %d »ý¼ºµÊ\n", bread);
 		printf("»§ÀÌ %c »ý¼ºµÊ\n", abc); // abc Ãâ·Â
 		Sleep(100);
-		bread = bread + 1;
 		abc = abc + 1;
 		time = time - 1;
 	}
@@ -35,6 +47,7 @@ int Bread()
 
 int main()
 {
-	Bread();
+	Bread1();
+	Bread2();
 	return 0;
 }
