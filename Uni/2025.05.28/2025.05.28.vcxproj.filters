@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="ANSI.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="time.c">
+    <ClCompile Include="main.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
